@@ -1,0 +1,50 @@
+{% extends "layout.html" %} 
+
+{% block body %}
+
+<div class="contpren">
+    <h1>
+        PRENOTA UN TAVOLO
+    </h1>
+    <div class="prenotazione">
+        <form action="/prenota" method="post" >
+    
+            <div class="generalità">
+                <input  type="text" name="nome"  placeholder="Nome" required>  
+            </div>
+
+            <div class="generalità">
+                <input  type="text" name="cognome"  placeholder="Cognome" required>
+            </div>
+
+            <div class="generalità">
+                <input  type="mail" name="email"  placeholder="Indirizzo Email" required>
+            </div>
+
+            <div class="generalità">
+                <input  type="text" name="numtelefono"  placeholder="Numero di telefono" required>
+                
+            </div>
+
+            <div class="bottonep" id="npersonew" > <!-- numeropersonew-->
+                Numero delle persone: <span id="npersone" name="numpersone" required>2</span> <!--numeropersone-->
+                <a href="#" id="sub" class="btn">-</a>
+                <a href="#" id="add" class="btn">+</a>
+            </div>
+
+            <div class="generalità">
+                <input  type="datetime-local" name="orario"  placeholder="Ora" required>
+            </div>
+            
+            <div class="divbotpren">
+                <button type="submit" class="bottoneprenotazione">MANDA PRENOTAZIONE</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="../static/prenotazioni.js"></script>
+
+
+
+{% endblock %}

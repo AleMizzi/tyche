@@ -1,0 +1,74 @@
+
+<!-- punto punto sevre per andare in dietro-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tyche</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="titolone">
+                <form action="/redirect">
+                    <button>TYCHE</button>
+                </form>
+                <p>Tutto ciò che c'è da sapere su di noi</p>
+            </div>
+                
+
+            <div class="contatti">
+
+                <h1>CONTATTACI</h1>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/tychebari">
+                        <img src="../static/logo-ig-png-32457.png" class="logo"/>&emsp;
+                    </a>
+                    <a href="https://www.facebook.com/tychebari">
+                        <img src="../static/logo-facebookpng-32255.png" class="logo">&emsp;
+                    </a>
+                    <a href="https://www.tripadvisor.it/Restaurant_Review-g187874-d23917875-Reviews-Tyche_Aperitivo_Urbano-Bari_Province_of_Bari_Puglia.html">
+                        <img src="../static/1907091_logo_media_social_tripadvisor_icon.png"class="logo" >&emsp;
+                    </a>
+                </div>
+            </div>
+    
+            <div style="clear:both"></div>
+            
+        </header>
+
+        <div class="nav">
+            <form action="/storia">
+                <button class="navbuttons">STORIA</button>
+            </form>
+
+            <form action="/menu">
+                <button class="navbuttons">I NOSTRI PIATTI</button>
+            </form>
+
+
+            <form action="/pagprenota">
+                <button class="navbuttons">PRENOTAZIONI</button>
+            </form>
+
+            <form action="/info">
+                <button class="navbuttons">DOVE TROVARCI</button>
+            </form>
+        </div>
+
+        {% block body %}{% endblock %}
+    </div>
+
+
+</body>
+
+<footer class="footer">
+    <h1>Termini e condizioni</h1>
+</footer>
+
+</html>

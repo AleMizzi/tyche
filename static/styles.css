@@ -1,0 +1,469 @@
+/*HTML*//**//**//************************************************************************************/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(bari-corso-vittorio-emanuele-ii.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 5;
+    padding: 0;
+    color: #666;
+    font-family: 'sans-serif', sans-serif;
+}
+
+
+/*DAL CONTAINER IN DENTRO*/
+
+.container {
+    margin: auto;
+    background: transparent;
+}
+
+
+/*HEADER, si suddivide in titolone e contatti*//*****************************************************/
+.header {
+    background: #21aabd;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+ 
+}
+
+/*"TYCHE" E PARAGRAFO*/
+.titolone{
+    float:left;  /*FA SPAZIO AI CONTATTI*/
+    
+}
+.titolone form button {
+    color: darkslategrey;
+    font-size: 400%;
+    position: relative;
+    margin-left: 2%;
+    font-family: oswald;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    text-transform: uppercase;
+}
+.titolone p {
+    color: darkslategrey;
+    font-size: 200%;
+    margin-left: 2%;
+    font-family: oswald;
+    text-decoration: none;
+    text-justify: distribute;
+}
+/*SOCIAL*/
+
+.contatti{
+    margin-top: 5%;
+    margin-left: 60%;
+    margin-right: 2%;
+}
+.contatti h1{ /*CONTATTACI*/
+    color: darkslategrey;
+    text-align: right;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 200%;
+    font-family: oswald;
+}
+.social{ /*GRUPPO ICONE*/
+    width: 100%;
+    text-align: right;
+}
+
+.logo{
+    width: 10%;
+}
+
+
+/*BARRA DI NAVIGAZIONE*//*************************************************************************************/
+.nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background: #666;
+    color: #fff;
+    line-height: 10%;
+    font-family: 'sans-serif', sans-serif;
+    text-transform: uppercase;
+    
+}
+.navbuttons {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    font-family: oswald;
+    color: #21aabd;
+    text-transform: uppercase;
+}
+/*PAGINE SINGOLE*/
+
+
+
+/*STORIA*//**********************************************//**************************************************/
+.storia {
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: auto;
+    float: left;
+    padding: 1%;
+}
+.storia h1{
+    text-align: center;
+    justify-items: center;
+    background: #fff;
+    border: #21aabd;
+    border-width: 2%;
+    border-radius: 25px;
+    border-style: solid;
+}
+.storia p{
+
+    font-size: 190%;
+    line-height: 1;
+    text-align: center;
+    font-family: oswald;
+    text-decoration: solid;
+    background-color: #fff;
+    border-radius: 30px;
+    border: #21aabd;
+    border-style: solid;
+    border-width: 1%;
+
+}
+
+.footer {/************************************************************************************/
+    
+    background: #21aabd;
+    width: 100%;
+    margin-top: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footer h1 {
+    
+    text-align: center;
+    color: darkslategray;
+}
+.clear {
+    width: 100%;
+    clear: both;
+    height: 1px;
+    background: #eee;
+}
+
+
+/*SLIDER*/
+
+.tuttoslider {
+    width: 680px;
+    height: 454px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.slider-container {
+    width: 680px;
+    /* stesse dimensioni delle immagini, perche devono occupare tutto il container*/
+    height: 454px;
+    background-color: transparent;
+    overflow: hidden;
+    position: inherit;
+}
+
+
+/* non toccare*/
+
+.image-container {
+    width: 800%;
+    /*basta che superi i 3400px */
+    height: 100%;
+    background-color: transparent;
+    clear: none;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+#slider-image-1:target~.image-container {
+    left: -0px;
+}
+
+#slider-image-2:target~.image-container {
+    left: -685px;
+}
+
+#slider-image-3:target~.image-container {
+    left: -1370px;
+}
+
+#slider-image-4:target~.image-container {
+    left: -2058px;
+}
+
+#slider-image-5:target~.image-container {
+    left: -2744px;
+}
+
+.button-container {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: -20px;
+}
+
+.slider-change {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    background-color: brown;
+    text-align: center;
+}
+
+/*MENU*//************************************************************************************************************/
+
+.contmenu{
+    background: #fff;
+}
+
+.titolo{
+    position: inherit;
+
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+
+}
+.titolosezione{
+    position: inherit;
+    
+    border-radius: 5% 5%;
+    border-width: 60%;
+    border-style: solid;
+    border-color: #666;
+    background-color: transparent;
+    font-size: 150%;
+    font-family: oswald;
+    color: #21aabd;
+    text-align: center;
+}
+
+.riga{ /*le div contenenti immagini e testi*/
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.cibi{ /*dim foto cibi*/
+    width: 80%;
+}
+
+.coldx{
+    float: right;
+}
+
+.colsx{
+    float: left;
+}
+.descrizioni{
+    width: 50%;
+    text-align: inherit;
+    padding-top: 5%;
+}
+/*DESTRA*/
+.descrizionidx h1{
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+    
+}
+.descrizionidx p{
+    text-align: center;
+    text-decoration: none;
+    
+}
+/*SINISTRA*/
+.descrizionisx h1{
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+}
+.descrizionisx p{
+    text-align: center;
+    text-decoration: none;
+}
+
+/***************************************************************************************************************/
+/*INFORMAZIONI*/
+.posizione{
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    padding-right: 2%;
+    align-items: center;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+.posizione h1{
+    text-align: center;
+    font-size: 180%;
+    text-decoration: none;
+    color: #21aabd;
+    padding: 2%;
+    background: #fff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 2%;
+
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 100%; /* Definisco l'aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+.google-maps > iframe {
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+}
+/******************************************************************************************************************************/
+/*PRENOTAZIONI*/
+.contpren{
+  background: #fff;
+  border: #21aabd;
+  border-radius: 30px;
+  border-style: solid;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.contpren h1{
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 200%;
+  font-weight: 1000;
+  font-family: oswald;
+  color: #21aabd;
+}
+.prenotazione{ /*CONTAINER CHE CONTIENE TUTTO*/
+    padding: 3%;
+    margin: 4%;
+}
+
+.prenotazione form{ /*CONTAINER CHE CONTIENE DIV CON I SUPI INPUT E IL BOTTONE*/
+    display: flex;
+    justify-content: space-around;
+    padding-right: 20%;
+    padding-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+}
+.prenotazione form div .divbotpren{ /*POSIZIONE BOTTONE MANDA PRENOTAZIONE*/
+    text-align: right;
+    
+}
+.generalità{ /*DIV CHE CONTIENE GLI INPUT SOLO, PRATICAMENTE I BOTTONI*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    align-content: flex-start;
+    align-content: space-around;
+   
+}
+.bottonep{ /*DIV CHE CONTIENE GLI INPUT SOLO del BOTTONI*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    align-content: flex-start;
+    align-content: space-around;
+   
+}
+.generalità input{ /*INPUT*/
+    font-family: inherit;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10% 5%;
+    font-size: 100%;
+    border: lightgray;
+    border-width: 4%;
+    border-style: solid;
+}
+
+.generalità a:hover{ /*HOVER PER IL BOTTONE PERSONE*/
+    text-decoration: none;
+}
+
+.btn{ /*BOTTONE PERSONE*/
+    background: lightgrey;
+    color: inherit;
+    padding: 6%;
+    border: #21aabd;
+    border-width: 10%;
+    border-style: solid;
+    transition: all .4s ease-in;
+    text-decoration: none;
+    font-size: 100%;
+}
+.btn:hover{
+    color: #21aabd;
+    border: #21aabd;
+    border-width: 10%;
+    border-style: solid;
+    
+}
+
+.bottoneprenotazione{
+    text-align: center;
+    justify-items: center;
+    background: #fff;
+    border: #21aabd;
+    border-width: 4%;
+    border-radius: 20px;
+    border-style: solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 150%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #21aabd;
+    transition: .3s ease-in-out;
+}
+.bottoneprenotazione:hover{
+    transform: scale(1.1);
+}
+
+.contpren p{
+    text-align: center;
+    font-size: 100%;
+    color: #21aabd;
+    font-family: inherit;
+    text-decoration: none;
+
+}

@@ -1,0 +1,45 @@
+
+{% extends "layout.html" %} 
+
+
+
+{% block body %}
+
+<div >
+    <div class="storia">
+        <h1>Il nostro locale</h1>
+        <p>
+            Il nostro locale sorge in una chiesetta sconsacrata del 1700 in piazza Padre de Pergola, vicino alla bellissima scuola media G.Carducci e al corso principale della nostra amata città, Corso Vittorio Emanuele II. Il nostro menu si rifà alla tradizione barese, ma ovviamente, abbiamo messo un po' del nostro per renderlo ancora più sfizzioso'. Abbiamo dei tavoli all'aperto, al chiuso e un balconcino per due con una vista meravigliosa sul lontano Castello Svevo e la città Vecchia di Bari. Siamo aperti tutti i giorni dalle 7:00 alle 2:00, venite a trovarci.
+        </p>
+    </div>
+
+    <div class="tuttoslider">
+        <div class="slider-container">
+            <span id="slider-image-1"></span>
+            <span id="slider-image-2"></span>
+            <span id="slider-image-3"></span>
+            <span id="slider-image-4"></span>
+            <span id="slider-image-5"></span>
+
+            <div class="image-container">
+                <img src="../static/DSC02327.jpg" class="slider-image" />
+                <img src="../static/DSC02344.jpg" class="slider-image" />
+                <img src="../static/DSC02380.jpg" class="slider-image" />
+                <img src="../static/DSC04109.jpg" class="slider-image" />
+                <img src="../static/DSC04224.jpg" class="slider-image" />
+
+            </div>
+            <div class="button-container">
+                <a href="#slider-image-1" class="slider-change"></a>
+                <a href="#slider-image-2" class="slider-change"></a>
+                <a href="#slider-image-3" class="slider-change"></a>
+                <a href="#slider-image-4" class="slider-change"></a>
+                <a href="#slider-image-5" class="slider-change"></a>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
