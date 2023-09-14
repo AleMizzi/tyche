@@ -6,7 +6,7 @@ click==8.1.7
 colorama==0.4.6
 cs50==9.2.5
 DateTime==5.2
-Flask==2.2.5
+Flask==2.3.3
 Flask-Session==0.5.0
 greenlet==2.0.2
 idna==3.4
