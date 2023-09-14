@@ -101,16 +101,5 @@ def prenota():
             writer.writerow([rows])
            
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         return render_template("prenotazioneeff.html")
         
